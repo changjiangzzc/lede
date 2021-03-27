@@ -32,6 +32,7 @@ jobs:
           cd package
           git clone https://github.com/xiaorouji/openwrt-passwall.git
           git clone https://github.com/liuran001/openwrt-packages.git
+		  ls
           cd ..
       - name: 更新 Feeds
         run: |
@@ -821,9 +822,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y
           CONFIG_PACKAGE_luci-app-ramfree=y
-          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui=y
-          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng=y
-          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_fuse-utils=y
           CONFIG_PACKAGE_luci-app-smartdns=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_UnblockNeteaseMusic_Go=y
@@ -831,26 +829,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-app-vsftpd=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_Shadowsocks=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_V2ray=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_Trojan=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_Kcptun=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_ShadowsocksR_Server=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_Shadowsocks_Server=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_ShadowsocksR_Socks=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_Shadowsocks_Socks=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_ipt2socks=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_microsocks=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_dns2socks=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_dnscrypt_proxy=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_dnsforwarder=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_ChinaDNS=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_privoxy=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_simple-obfs=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_simple-obfs-server=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_udpspeeder=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_udp2raw-tunnel=y
-          CONFIG_PACKAGE_luci-app-vssr-plus_INCLUDE_v2ray-plugin=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wol=y
           CONFIG_PACKAGE_luci-theme-argon=y
